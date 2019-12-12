@@ -4,9 +4,9 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-     "test": "npm run lint",
-     "start": "node script.js",
-     "lint": "eslint --ignore-path .gitignore ."
+    "test": "npm run lint",
+    "start": "node script.js",
+    "lint": "eslint --ignore-path .gitignore ."
   },
   "author": "anyalebedenko",
   "license": "ISC",
@@ -21,11 +21,12 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.1.0",
     "prettier": "^1.19.1"
   },
-   "husky": {
-     "hooks": {
-       "pre-commit": "npm run lint -- --fix && npx prettier script.js --write"
-     }
-   }
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint -- --fix && npx prettier script.js --write"
+    }
+  }
 }
